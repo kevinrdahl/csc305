@@ -1,0 +1,27 @@
+﻿Build started 2/2/2016 3:48:09 PM.
+     1>Project "C:\Users\Kevin\Documents\GitHub\csc305\a1\Build\ImageDemo.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Kevin\Documents\GitHub\csc305\a1\ImageKit\libpng\include /IC:\Users\Kevin\Documents\GitHub\csc305\a1\ImageKit\GLFW\include /IC:\Users\Kevin\Documents\GitHub\csc305\a1\ImageKit\Image /IC:\Users\Kevin\Documents\eigen /IC:\Users\Kevin\Documents\GitHub\csc305\a1\Build /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D WIN_COMPILE /D WITH_OPENGL /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"ImageDemo.dir\Debug\\" /Fd"ImageDemo.dir\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt C:\Users\Kevin\Documents\GitHub\csc305\a1\ImageKit\main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kevin\Documents\GitHub\csc305\a1\Build\Debug\ImageDemo.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib glu32.lib opengl32.lib C:\Users\Kevin\Documents\GitHub\csc305\a1\ImageKit\GLFW\lib\win32\glfw3.lib C:\Users\Kevin\Documents\GitHub\csc305\a1\ImageKit\GLFW\lib\win32\glew32.lib C:\Users\Kevin\Documents\GitHub\csc305\a1\ImageKit\libpng\lib\win32\libpng16_static.lib C:\Users\Kevin\Documents\GitHub\csc305\a1\ImageKit\libpng\lib\win32\zlibstatic.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Kevin/Documents/GitHub/csc305/a1/Build/Debug/ImageDemo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Kevin/Documents/GitHub/csc305/a1/Build/Debug/ImageDemo.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug ImageDemo.dir\Debug\Ray.obj
+         ImageDemo.dir\Debug\SceneObject.obj
+         ImageDemo.dir\Debug\Image.obj
+         ImageDemo.dir\Debug\main.obj
+         ImageDemo.vcxproj -> C:\Users\Kevin\Documents\GitHub\csc305\a1\Build\Debug\ImageDemo.exe
+       PostBuildEvent:
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Kevin/Documents/GitHub/csc305/a1/ImageKit/GLFW/lib/win32/glew32.dll C:/Users/Kevin/Documents/GitHub/csc305/a1/Build/Debug/
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+     1>Done Building Project "C:\Users\Kevin\Documents\GitHub\csc305\a1\Build\ImageDemo.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.20
